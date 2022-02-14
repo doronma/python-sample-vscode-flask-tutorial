@@ -16,7 +16,8 @@
             "request": "launch",
             "program": "${file}",
             "env": {
-                "FLASK_ENV": "development"
+                "FLASK_ENV": "development",
+               
             }
         },
         {
@@ -64,7 +65,7 @@
             "request": "launch",
             "module": "flask",
             "env": {
-                "FLASK_APP": "hello_app.webapp"                
+                "FLASK_APP": "hello_app.webapp"   
             },
             "args": [
                 "run",
@@ -105,7 +106,7 @@
             "name": "Python: All debug Options",
             "type": "python",
             "request": "launch",
-            "pythonPath": "${config:python.pythonPath}",
+            "python": "${command:python.interpreterPath}",
             "program": "${file}",
             "module": "module.name",
             "env": {
