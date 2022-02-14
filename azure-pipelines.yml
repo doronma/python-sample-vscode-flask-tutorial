@@ -21,6 +21,11 @@ steps:
     python -m pip install --upgrade pip
     pip install -r requirements.txt
   displayName: 'Install dependencies'
+- task: PythonScript@0
+  inputs:
+    scriptSource: 'filePath'
+    scriptPath: 'scripts/script.py'
+    arguments:  --world Venus
 
 # - script: |
 #     pip install pytest pytest-azurepipelines
