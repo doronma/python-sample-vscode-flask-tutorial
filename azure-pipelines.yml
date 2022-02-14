@@ -27,6 +27,11 @@ steps:
     scriptPath: 'scripts/script.py'
     arguments:  --world Venus
 
+- script: |
+    python -m pip install flake8
+    flake8 .
+  displayName: 'Run lint tests'
+  
 # - script: |
 #     pip install pytest pytest-azurepipelines
 #     pytest
