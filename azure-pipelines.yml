@@ -28,6 +28,11 @@ steps:
     arguments:  --world Venus
 
 # - script: |
-#     pip install pytest pytest-azurepipelines
-#     pytest
-#   displayName: 'pytest'
+#     python -m pip install flake8
+#     flake8 .
+#   displayName: 'Run lint tests'
+  
+- script: |
+    pip install pytest pytest-azurepipelines
+    pytest
+  displayName: 'pytest'
