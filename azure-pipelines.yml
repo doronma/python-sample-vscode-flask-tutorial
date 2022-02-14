@@ -25,6 +25,7 @@ steps:
   inputs:
     scriptSource: 'filePath'
     scriptPath: 'scripts/script.py'
+    arguments:  --world Venus
 
 # - script: |
 #     pip install pytest pytest-azurepipelines
